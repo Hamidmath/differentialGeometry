@@ -41,7 +41,7 @@ class H_DG:
         dot_product = sum([a * b for a, b in zip(v1, v2)])
         mag1 = sum([a**2 for a in v1]) ** 0.5
         mag2 = sum([a**2 for a in v2]) ** 0.5
-        return dot_product == mag1 * mag2
+        return abs(abs(dot_product) - mag1 * mag2)<0.1**10
     
     # find intersection of two lines acoording to their features
     def intersection(H, lines):
