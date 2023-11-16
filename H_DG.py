@@ -68,7 +68,7 @@ class H_DG:
         center = H.intersection(lines)
         if center == "NoIntersection":
             return math.inf
-        radius = sum([(p2[i]-center[i])**2 for i in range(3))**0.5
+        radius = sum([(p2[i]-center[i])**2 for i in range(3)])**0.5
         return 1/radius
 
 
